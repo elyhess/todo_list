@@ -1,0 +1,22 @@
+{
+  "name": "todo_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env NODE_ENV=development nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^9.0.2",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "sequelize": "^5.21.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
