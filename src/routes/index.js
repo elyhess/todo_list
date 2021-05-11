@@ -1,5 +1,5 @@
-// import resource from "./resource";
-//
-// export default {
-//     resource,
-// };
+import todo from "./todo";
+
+export default {
+    todo,
+};

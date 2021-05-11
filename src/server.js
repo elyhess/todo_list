@@ -5,7 +5,7 @@ import routes from "./routes";
 const app = express();
 app.use(express.json());
 
-// app.use("/resources", routes.user);
+app.use("/", routes.todo);
 
 app.use((req, res) => {
     res.status(404).send("404:Page not found");

@@ -22,14 +22,14 @@ for (let i = 0; i < databases.length; i++) {
 }
 
 /**Add the Database Models**/
-fs.readdirSync(__dirname + '/models')
+fs.readdirSync(__dirname + '/rest')
     .filter((file) => {
         return (
             file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js'
         );
     })
     .forEach((file) => {
-        var model = db.models.import(path.join(__dirname + '/models', file));
+        var model = db.rest.import(path.join(__dirname + '/rest', file));
         db[model.name] = model;
     });
 
